@@ -37,7 +37,7 @@ public class geradoraDeFigurinhas {
         grafics.setFont(font);
         
         //escrever uma frase na nova imagem
-        grafics.drawString("Isso é um filme", 100, novaAltura - 120);
+        grafics.drawString("LOKURA HEIM", 200, novaAltura - 120);
 
         //escrever a imagem em um arquivo
         ImageIO.write(novaImagem, "png", new File(nomeArquivo));
