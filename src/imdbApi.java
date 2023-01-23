@@ -11,12 +11,12 @@ public class imdbApi {
         //fazer a conexão HTTP e fazer a busca dos 250 filmes
 
         //String url = "https://api.mocki.io/v2/549a5d8b/NASA-APOD-JamesWebbSpaceTelescope";
-        String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2021-12-03&end_date=2021-12-12";
-        extratorConteudo extrator = new extrratorConteudoNasa();
-        
         //String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
         //extratorConteudo extrator = new extratorConteudoIMDB();
         //String url = "https://imdb-api.com/en/API/Top250Movies/k_q6h6s0ro";
+
+        String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2021-12-03&end_date=2021-12-12";
+        extratorConteudo extrator = new extrratorConteudoNasa();
 
         var http = new clienteHttp();
         String json = http.buscaDados(url);

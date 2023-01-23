@@ -7,7 +7,6 @@ import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
-
 public class geradoraDeFigurinhas {
     
     void cria(InputStream inputStream, String nomeArquivo) throws Exception{
@@ -37,7 +36,7 @@ public class geradoraDeFigurinhas {
         grafics.setFont(font);
         
         //escrever uma frase na nova imagem
-        grafics.drawString("Imagem", 200, novaAltura - 120);
+        grafics.drawString("Imagem", largura/2-100, novaAltura - 120);
 
         //escrever a imagem em um arquivo
         ImageIO.write(novaImagem, "png", new File(nomeArquivo));
